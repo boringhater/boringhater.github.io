@@ -1,12 +1,13 @@
 ﻿@charset "utf-8";
 
+#site {
+    width: 600px;
+    min-width: 600px;
+    margin: 0 auto;
+}
 <#main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    min-height: 100vh;
-    min-width: 100vh;
     overflow: visible;
     position: relative;
 }
@@ -27,6 +28,8 @@ body {
     font-weight:400;
     line-height: 1.7;
     background-color: #fff;
+    min-width:600px;
+    width:100%;
 }
 
 .header {
@@ -36,7 +39,6 @@ body {
 
 .for-sticky {
     display:flex;
-    min-width:300px;
     position: fixed;
     z-index: -1;
     bottom: 0;
@@ -54,29 +56,14 @@ body {
     align-items:center;
 }
 
-.menu-wrap {
-    position: fixed;
-    z-index: 1001;
-    width: 300px;
-    height: 100%;
-    right: 0;
-    float: right;
-    background: #2f2f2f;
-    padding: 2.5em 1.5em 0;
-    -webkit-transform: translate3d(300px, 0, 0);
-    transform: translate3d(300px, 0, 0);
-    -webkit-transition: -webkit-transform 0.4s;
-    transition: transform 0.4s;
-    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-}
-
 .content-wrap {
+    margin-top:50px;
     position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
+    min-width:600px;
 }
 
 .fine-block {
@@ -87,18 +74,17 @@ body {
     justify-content:center;
     align-items:center;
     height:auto;
-    width: auto;
-    min-width:300px;
+    width: 100%;
+    height:62%;
 }
 
 .fine-img {
-    position:relative;
-    display:flex;
-    align-content:center;
-    justify-content:center;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     width: 62%;
-    min-width:600px;
-    min-height:300px;
+    min-width: 600px;
     height: 100%;
     flex-grow: 1.62;
 }
@@ -114,7 +100,8 @@ body {
     font-size: 13px;
     line-height: 34px;
     letter-spacing: 0.5px;
-    min-height:300px;
+    min-height:600px;
+    min-width:600px;
 }
 
 .works-wrap {
@@ -123,9 +110,9 @@ body {
     flex-direction: column;
     justify-content:  normal;
     align-items:center;
-    height: 972px;
+    min-height: 90vh;
     width: 100%;
-    min-width: 300px;
+    height:32%;
     background: rgba(200,200,200,0.4);
 }
 
@@ -133,10 +120,11 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
     height: 10vh;
-
+    min-height:70px;
     width: 100%;
-    min-width: 300px;
     background: rgba(90,90,90,0.5);
 }
 
@@ -176,4 +164,10 @@ body {
 a {
     color: #2f2f2f;
     text-decoration: none
+}
+
+.copyright-text {
+    color:rgba(255,255,255,0.6);
+    font-weight: 400;
+    text-align:center;
 }
