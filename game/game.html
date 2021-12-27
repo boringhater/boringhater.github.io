@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>G A M E</title>
+    <link rel="stylesheet" id="theme" href="assets/css/game_style1.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="for-sticky">
+            <a href="../index.html">S A I T E K</a>
+        </div>
+    </div>
+    <div class="content-wrap">
+        <div class="works-wrap">
+            <div class="game-full-wrap">
+                <div class="start-overlay big-text" id="start_overlay" style="font-weight:1000;text-decoration-color#502d4b;">
+                    <div class="full-element-wrap" style="background: rgba(255,255,255,0.7); min-width:60%; margin-top:20px;">
+                        <h3 style="line-height:20px;">ПРАВИЛА:</h3>
+                        <div class="copyright-text" style="font-size:20px; line-height:30px;">
+                            <ul>
+                                Есть три сосуда разных объемов. Требуется получить указанное количество воды.
+                                <br style="margin:10px;"> Допустимые действия:
+                                <li>Полностью освободить или полностью заполнить сосуд.</li>
+                                <li>Переливание воды из одного сосуда в другой: переливается максимально допустимый объем жидкости. Если в "принимающем" сосуде недостаточно места, избыток воды остается в первоначальном сосуде.</li>
+                            </ul>
+                        </div>
+                        <input id="username" style="font-weight:400; font-size:20px; font-family:Montserrat; margin-top:30px;" />
+                        <button class="btn" id="play_btn" style="background:none; background-image: url('assets/images/play.png');background-position:center; background-size:contain; background-repeat:no-repeat; margin-top:70px;"></button>
+                    </div>
+                </div>
+                <div class="win-overlay big-text" id="win_overlay" style="font-weight: 1000; color: rgba(30,30,30,0.7);"></div>
+                <div class="info-btn-wrap">
+                    <div class="row-wrap">
+                        <input class="slider-music" id="music_slider" style="display:flex; align-self:center;" type="range" min="0" max="100" step="1" value="0">
+                        <div class="new-level-btn"></div>
+                        <kek style="display:flex; width:20%; justify-content: center;">
+                            <div class="btn" id="sound_btn" style="background:none; background-image: url('assets/images/sound.png'); background-size:contain; background-repeat:no-repeat;"></div>
+                            <div class="btn" id="theme_btn" style="margin-left: 50px; background: none; background-image: url('assets/images/theme.png'); background-size: contain; background-repeat: no-repeat;"></div>
+                            <div class="btn" id="save_btn" style="margin-left: 50px; background: none; background-image: url('assets/images/save.png'); background-size: contain; background-repeat: no-repeat;"></div>
+                        </kek>
+                    </div>
+                    <div class="basic-info-wrap">
+                        <div id="game_task" style="opacity:0.65; width:30%;"></div>
+                        <div id="timer" style="opacity:0.65;">0:00</div>
+                        <div id="moves_info" style="opacity:0.65; width:30%; display:flex; justify-content:flex-end;"></div>
+                    </div>
+                </div>
+                <div class="game-activity-wrap">
+                    <div class="full-element-wrap">
+                        <div class="jar-arrow-wrap" id="jar_wrap_left">
+                            <div class="arrow" id="arrow_left"></div>
+                            <div class="jar" id="jar_left">
+                                <div class="water"></div>
+                                <div class="water-bottom"></div>
+                            </div>
+                            <div class="water-info" id="water_info_left"></div>
+                        </div>
+                        <div class="row-wrap" style="justify-content:center; top:15px;">
+                            <div class="plus-btn" id="water_plus_left"></div>
+                            <div class="minus-btn" id="water_minus_left"></div>
+                        </div>
+                    </div>
+                    <div class="full-element-wrap">
+                        <div class="jar-arrow-wrap" id="jar_wrap_center">
+                            <div class="arrow" id="arrow_center"></div>
+                            <div class="jar" id="jar_center">
+                                <div class="water"></div>
+                                <div class="water-bottom"></div>
+                            </div>
+                            <div class="water-info" id="water_info_center"></div>
+                        </div>
+                        <div class="row-wrap" style="justify-content:center; top:15px;">
+                            <div class="plus-btn" id="water_plus_center"></div>
+                            <div class="minus-btn" id="water_minus_center"></div>
+                        </div>
+                    </div>
+                    <div class="full-element-wrap">
+                        <div class="jar-arrow-wrap" id="jar_wrap_right">
+                            <div class="arrow" id="arrow_right"></div>
+                            <div class="jar" id="jar_right">
+                                <div class="water"></div>
+                                <div class="water-bottom"></div>
+                            </div>
+                            <div class="water-info" id="water_info_right"></div>
+                        </div>
+                        <div class="row-wrap" style="justify-content:center; top:15px;">
+                            <div class="plus-btn" id="water_plus_right"></div>
+                            <div class="minus-btn" id="water_minus_right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grey-block"><div class="copyright-text">© boringhater 2021<br />Все права отсутствуют напрочь, защищать нечего</div></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html> 

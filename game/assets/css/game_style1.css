@@ -1,0 +1,468 @@
+﻿@charset "utf-8";
+
+#site {
+    width: 700px;
+    min-width: 700px;
+    margin: 0 auto;
+}
+
+<#main {
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    position: relative;
+}
+
+body,
+html {
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: Montserrat;
+    cursor: url('https://cdn.custom-cursor.com/db/5120/32/arrow2893.png'), default;
+}
+
+body {
+    color: #2f2f2f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    background-color: #fff;
+    min-width: 600px;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    z-index: 9999;
+}
+
+.for-sticky {
+    display: flex;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    opacity: 0.8;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 0px 15px 5px 15px;
+    background: #ffffff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    min-width: 600px;
+}
+
+.small_text {
+    position: relative;
+    display: flex;
+    width: 38%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 13px;
+    line-height: 34px;
+    letter-spacing: 0.5px;
+    min-height: 600px;
+    min-width: 600px;
+}
+
+.works-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 700px;
+    width: 100%;
+    height: 32%;
+    background: repeating-linear-gradient(45deg, #fff, #fff 15px, #b5deeb 0, #b5deeb 30px);
+}
+
+.grey-block {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    min-height: 70px;
+    width: 100%;
+    background: #fff;
+}
+
+.big-text {
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 200px;
+    letter-spacing: 2px;
+}
+
+.task {
+    width: auto;
+    height: auto;
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    border: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+    .task:hover {
+        animation: fade 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+@keyframes fade {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 50%;
+    }
+}
+
+a {
+    color: #2f2f2f;
+    text-decoration: none;
+    cursor: url('https://cdn.custom-cursor.com/db/5119/32/arrow2893.png'), pointer;
+}
+
+.copyright-text {
+    color: black;
+    opacity: 0.7;
+    font-weight: 400;
+    text-align: center;
+}
+
+.game-full-wrap {
+    opacity: 100;
+    width: 55%;
+    height: 100%;
+    min-height: 600px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: none;
+    margin: 5% auto;
+    /*border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;*/
+    padding: 1em;
+    line-height: 1.5em;
+    background: #fff;
+    /*border: solid 5px #502d4b;
+    border-radius: 30px;*/
+}
+
+.info-btn-wrap {
+    opacity: 100;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: none;
+}
+
+.game-activity-wrap {
+    opacity: 100;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    background: none;
+}
+
+.jar-arrow-wrap {
+    width: 80%;
+    height: 100%;
+    min-width: 128px;
+    min-height: 500px;
+    max-width: 512px;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: url('https://cdn.custom-cursor.com/db/5119/32/arrow2893.png'), pointer;
+}
+
+.jar {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: column-reverse;
+    flex-grow: 2;
+    background-image: url('../images/jar_empty.png');
+    background-size: 100% 100%;
+}
+
+.water {
+    width: 21.5%;
+    height: 70%;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    bottom: 13.98%;
+    flex-direction: column-reverse;
+    overflow: visible;
+    opacity: 0;
+    background: url("../images/wave.png");
+    animation: water-animation 5.5s linear infinite;
+}
+
+.water-bottom {
+    width: 21.5%;
+    height: 10%;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    bottom: 4%;
+    flex-direction: column-reverse;
+    overflow: visible;
+    opacity: 0;
+    border-bottom-left-radius: 115% 220%;
+    border-bottom-right-radius: 115% 220%;
+    background: #90d3ea;
+}
+
+.arrow {
+    width: 45%;
+    height: 25%;
+    position: relative;
+    opacity: 0;
+    display: flex;
+    justify-self: flex-start;
+    overflow: visible;
+    flex-grow: 1;
+    background-image: url("../images/arrow.png");
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.water-info {
+    width: 100%;
+    height: 10%;
+    color: black;
+    opacity: 0.7;
+    font-size: 35px;
+    font-weight: 1000;
+    line-height: 100%;
+    letter-spacing: 2px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.basic-info-wrap {
+    width: 100%;
+    height: 10%;
+    color: black;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    font-size: 35px;
+    font-weight: 1000;
+    line-height: 100%;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.full-element-wrap {
+    width: 33%;
+    height: 100%;
+    max-width: 512px;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+}
+
+.plus-btn {
+    border: none;
+    min-height: 32px;
+    min-width: 32px;
+    width: 10%;
+    height: 10%;
+    background-image: url("../images/water_plus.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: url('https://cdn.custom-cursor.com/db/5119/32/arrow2893.png'), pointer;
+}
+
+.minus-btn {
+    border: none;
+    min-height: 32px;
+    min-width: 32px;
+    width: 10%;
+    height: 10%;
+    background-image: url("../images/water_minus.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: url('https://cdn.custom-cursor.com/db/5119/32/arrow2893.png'), pointer;
+}
+
+.new-level-btn {
+    border: none;
+    min-height: 32px;
+    min-width: 32px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 10%;
+    height: 10%;
+    background-image: url("../images/new_level.png");
+    background-position: center;
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+    cursor: url('https://cdn.custom-cursor.com/db/5119/32/arrow2893.png'), pointer;
+}
+
+.start-overlay {
+    position: absolute; /* Sit on top of the page content */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex; /* Hidden by default */
+    flex-direction: column;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(45deg, #fff, #fff 15px, #cdedf7 0, #cdedf7 30px);
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.btn {
+    position: relative;
+    border: none;
+    min-height: 32px;
+    min-width: 32px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 10%;
+    height: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: url('https://cdn.custom-cursor.com/db/5119/32/arrow2893.png'), pointer;
+}
+
+
+.win-overlay {
+    position: absolute; /* Sit on top of the page content */
+    min-height: 600px;
+    min-width: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    width: 56.7%; /* Full width (cover the whole page) */
+    height: 79%; /* Full height (cover the whole page) */
+    top: 10.5%;
+    left: 21.6%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+
+@keyframes water-animation {
+    0 {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: 1000px 0px;
+    }
+}
+
+.row-wrap {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.slider-music {
+    -webkit-appearance: none;
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    cursor: url('https://cdn.custom-cursor.com/db/5120/32/arrow2893.png'), default;
+}
+
+    .slider-music::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        background: url('../images/notes.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: url('https://cdn.custom-cursor.com/db/5119/32/arrow2893.png'), pointer;
+    }
+
+    .slider-music::-moz-range-thumb {
+        width: 30px;
+        height: 30px;
+        border: 0;
+        background: url('../images/notes.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: url('https://cdn.custom-cursor.com/db/5119/32/arrow2893.png'), pointer;
+    }
