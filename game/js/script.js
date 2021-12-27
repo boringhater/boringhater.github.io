@@ -59,12 +59,12 @@ music_slider.oninput = function () {
 let sound_btn = document.getElementById("sound_btn");
 sound_btn.onclick = function () {
     if (sound_bool) {
-        sound_btn.style.backgroundImage = "url(\"/assets/images/no_sound.png\")";
+        sound_btn.style.backgroundImage = "url(\"assets/images/no_sound.png\")";
         audio.volume = 0;
         sound_bool = false;
     }
     else {
-        sound_btn.style.backgroundImage = "url(\"/assets/images/sound.png\")";
+        sound_btn.style.backgroundImage = "url(\"assets/images/sound.png\")";
         audio.volume = 1;
         sound_bool = true;
     }
