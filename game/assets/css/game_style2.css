@@ -397,20 +397,14 @@ a {
 
 .win-overlay {
     position: absolute; /* Sit on top of the page content */
-    min-height: 600px;
-    min-width: 400px;
+    width:100%;
+    height:100%;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: none; /* Hidden by default */
     flex-direction: column;
-    width: 56.7%; /* Full width (cover the whole page) */
-    height: 79%; /* Full height (cover the whole page) */
-    top: 10.5%;
-    left: 21.6%;
-    right: 0;
-    bottom: 0;
-    background-color: #2f2f2f;
+    background-color: rgba(47, 47, 47, 0.9);
     color: white;
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
